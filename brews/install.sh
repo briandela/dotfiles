@@ -30,11 +30,12 @@ brew install ssh-copy-id
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Casks: Dev
+brew cask install otto
 brew cask install vagrant
 brew cask install sourcetree
 brew cask install heroku-toolbelt
 brew cask install sublime-text3
-	
+
 # Casks: tools/misc
 brew cask install skype
 brew cask install flux
