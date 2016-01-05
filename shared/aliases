@@ -6,8 +6,9 @@ alias st='open -a SourceTree '
 alias vssh_debug="vagrant ssh -- -L 5858:127.0.0.1:5858"
 
 # node
-alias ni="node-inspector --preload false"
+alias ni="node-inspector"
 alias npmls='npm ls --depth=0'
+alias labd='node-debug node_modules/.bin/lab -M 0 -m 0'
 
 # git
 alias g='git'
