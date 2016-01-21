@@ -7,3 +7,6 @@
 [submodule "shared/powerline-shell"]
 	path = shared/powerline-shell
 	url = https://github.com/milkbikis/powerline-shell
+[submodule "zsh/modules"]
+	path = zsh/modules
+	url = https://github.com/akoenig/gulp.plugin.zsh

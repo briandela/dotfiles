@@ -9,6 +9,7 @@ alias vssh_debug="vagrant ssh -- -L 5858:127.0.0.1:5858"
 alias ni="node-inspector"
 alias npmls='npm ls --depth=0'
 alias labd='node-debug node_modules/.bin/lab -M 0 -m 0'
+alias lab='node_modules/.bin/lab'
 
 # git
 alias g='git'
