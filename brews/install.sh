@@ -45,6 +45,7 @@ brew cask install google-drive
 brew cask install macdown
 brew cask install skype
 brew cask install spectacle
+brew cask install vlc
 
 # Clean things up
 brew linkapps

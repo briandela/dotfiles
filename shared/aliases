@@ -6,7 +6,7 @@ alias st='open -a SourceTree '
 alias vssh_debug="vagrant ssh -- -L 5858:127.0.0.1:5858"
 
 # node
-alias ni="node-inspector"
+alias ni="node-inspector --no-preload"
 alias npmls='npm ls --depth=0'
 alias labd='node-debug node_modules/.bin/lab -M 0 -m 0'
 alias lab='node_modules/.bin/lab'
@@ -26,3 +26,5 @@ alias out='cd ~/outhouse'
 alias dots='cd ~/.dotfiles'
 alias sites='cd ~/sites'
 alias nf='cd ~/nearform'
+alias ep='cd ~/epoch'
+alias epoch='cd ~/epoch'

@@ -1,6 +1,7 @@
 [core]
-    excludesfile = /Users/brian/.dotfiles/git/gitignore
+	excludesfile = /Users/brian/.dotfiles/git/gitignore
     editor = /usr/bin/vim
+	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
 [include]
     path = ~/.dotfiles/git/configs/alias.gitconfig
     path = ~/.dotfiles/git/configs/colour.gitconfig
@@ -13,3 +14,6 @@
 [mergetool "sourcetree"]
 	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.5/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	name = Brian Delahunty
+	email = brian@briandela.com

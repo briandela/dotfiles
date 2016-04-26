@@ -38,4 +38,4 @@ fi
 export NVM_DIR="/Users/brian/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp.plugin.zsh/gulp.plugin.zsh
+source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp.plugin.zsh
