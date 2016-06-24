@@ -2,12 +2,13 @@
 		dotfiles \
 		brews \
 		ensure-location \
+        install-npm-modules \
 		install-configs \
-		install-configs-git \ 
+		install-configs-git \
 		install-fonts \
 		install-prezto \
 		update-submodules
-help: 
+help:
 	@echo "Usage: make <command>"
 	@echo
 	@echo "    brews  Install homebrew, brew tools, and casks"
@@ -18,7 +19,7 @@ dotfiles: ensure-location update-submodules install-configs install-fonts instal
 	@echo "Remember to also configure iterm2 to use powerline fonts"
 	@echo
 
-brews: 
+brews:
 	sh $(shell pwd)/brews/install.sh
 	@echo
 
@@ -31,12 +32,15 @@ ifneq "$(shell pwd)" "$(HOME)/.dotfiles"
 	exit 1
 endif
 
+install-npm-modules:
+    sh $(shell pwd)/npm/install.sh
+
 install-configs: install-configs-git install-shared-dotfiles
 
 install-configs-git:
 	ln -sfn $(shell pwd)/git/gitconfig $(HOME)/.gitconfig
 
-install-shared-dotfiles: 
+install-shared-dotfiles:
 	ln -sfn $(shell pwd)/shared/aliases $(HOME)/.aliases
 	ln -sfn $(shell pwd)/shared/powerline-shell.py $(HOME)/.powerline-shell.py
 
@@ -49,7 +53,7 @@ install-prezto: update-submodules
 		r=$$(basename $$runcom); \
 	  ln -sfn $$runcom $(HOME)/.$$r; \
 	done
-	
+
 	ln -sfn $(shell pwd)/zsh/zpreztorc $(HOME)/.zpreztorc
 	ln -sfn $(shell pwd)/zsh/zshrc $(HOME)/.zshrc
 	ln -sfn $(shell pwd)/zsh/prezto $(HOME)/.zprezto

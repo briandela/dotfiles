@@ -28,3 +28,6 @@ alias sites='cd ~/sites'
 alias nf='cd ~/nearform'
 alias ep='cd ~/epoch'
 alias epoch='cd ~/epoch'
+
+# work
+alias template='rsync -av --exclude=.git --exclude=node_modules --exclude=coverage ../node-package-template/ .'
