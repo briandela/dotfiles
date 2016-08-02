@@ -47,3 +47,6 @@ source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp.plugin.zsh
 if [[ -s "/usr/local/bin/aws_zsh_completer.sh" ]]; then
   source /usr/local/bin/aws_zsh_completer.sh
 fi
+
+# kubectl
+source <(kubectl completion zsh)
