@@ -42,3 +42,8 @@ source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp.plugin.zsh
 
 # added by travis gem
 [ -f /Users/brian/.travis/travis.sh ] && source /Users/brian/.travis/travis.sh
+
+#aws cli auto complete
+if [[ -s "/usr/local/bin/aws_zsh_completer.sh" ]]; then
+  source /usr/local/bin/aws_zsh_completer.sh
+fi

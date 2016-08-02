@@ -21,11 +21,12 @@ brew tap caskroom/versions
 
 # Brews
 brew install go
+brew install mtr
 brew install node
 brew install postgresql
 brew install ssh-copy-id
+brew install watch
 brew install wget
-brew install mtr
 
 # Casks
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

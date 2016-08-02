@@ -19,6 +19,7 @@ alias co="git co"
 alias cob="git co -b"
 alias upmaster="git fetch origin master:master"
 alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master.."
+alias ghb="git-hub-browse"
 
 # locations
 alias code='cd ~/code'
