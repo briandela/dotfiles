@@ -50,3 +50,4 @@ fi
 
 # kubectl
 source <(kubectl completion zsh)
+source /Users/brian/.gulp.plugin.zsh/gulp.plugin.zsh

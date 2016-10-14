@@ -22,7 +22,6 @@ alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%
 alias ghb="git-hub-browse"
 
 # locations
-alias code='cd ~/code'
 alias out='cd ~/outhouse'
 alias dots='cd ~/.dotfiles'
 alias sites='cd ~/sites'
