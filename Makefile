@@ -1,13 +1,13 @@
 .PHONY: Help \
-		dotfiles \
-		brews \
-		ensure-location \
+	dotfiles \
+	brews \
+	ensure-location \
         install-npm-modules \
-		install-configs \
-		install-configs-git \
-		install-fonts \
-		install-prezto \
-		update-submodules
+	install-configs \
+	install-configs-git \
+	install-fonts \
+	install-prezto \
+	update-submodules
 help:
 	@echo "Usage: make <command>"
 	@echo
@@ -33,7 +33,7 @@ ifneq "$(shell pwd)" "$(HOME)/.dotfiles"
 endif
 
 install-npm-modules:
-    sh $(shell pwd)/npm/install.sh
+	sh $(shell pwd)/npm/install.sh
 
 install-configs: install-configs-git install-shared-dotfiles
 
@@ -51,7 +51,7 @@ install-prezto: update-submodules
 
 	for runcom in $(shell find $(shell pwd)/zsh/prezto/runcoms -type f -name 'z*'); do \
 		r=$$(basename $$runcom); \
-	  ln -sfn $$runcom $(HOME)/.$$r; \
+		ln -sfn $$runcom $(HOME)/.$$r; \
 	done
 
 	ln -sfn $(shell pwd)/zsh/zpreztorc $(HOME)/.zpreztorc
