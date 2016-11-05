@@ -6,7 +6,7 @@
 	url = https://github.com/briandela/fonts
 [submodule "shared/powerline-shell"]
 	path = shared/powerline-shell
-	url = https://github.com/milkbikis/powerline-shell
-[submodule "zsh/modules"]
-	path = zsh/modules
-	url = https://github.com/akoenig/gulp.plugin.zsh
+	url = https://github.com/briandela/powerline-shell
+[submodule "gulpcompletion"]
+	path = zsh/gulpcompletion
+	url = https://github.com/briandela/gulp.plugin.zsh
