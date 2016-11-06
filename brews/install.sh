@@ -32,22 +32,37 @@ brew install wget
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Casks: Dev
+brew cask install dockertoolbox
 brew cask install heroku-toolbelt
 brew cask install sourcetree
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install vagrant
-brew cask install dockertoolbox
+brew cask install visual-studio-code 
 
 # Casks: tools/misc
 brew cask install adobe-reader
 brew cask install atom
+brew cask install caffeine
+brew cask install cheatsheet
 brew cask install cyberduck
 brew cask install flux
+brew cask install google-chrome
 brew cask install google-drive
 brew cask install macdown
 brew cask install skype
 brew cask install spectacle
+brew cask install superduper
 brew cask install vlc
+
+# Casks: osx quick look
+brew cask install betterzipql
+brew cask install qlcolorcode
+brew cask install qlmarkdown
+brew cask install qlprettypatch
+brew cask install qlstephen
+brew cask install quicklook-csv
+brew cask install quicklook-json
+brew cask install suspicious-package
 
 # Clean things up
 brew linkapps

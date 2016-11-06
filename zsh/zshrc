@@ -17,7 +17,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.aliases" ]]; then
   source "${ZDOTDIR:-$HOME}/.aliases"
 fi
 
-# For now use .powerlin-shell.py (https://github.com/milkbikis/powerline-shell)
+# For now use .powerlin-shell.py (https://github.com/briandela/powerline-shell)
 function powerline_precmd() {
   PS1="$(~/.powerline-shell.py $? --shell zsh 2> /dev/null)"
 }
@@ -38,7 +38,7 @@ fi
 export NVM_DIR="/Users/brian/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp.plugin.zsh
+source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/gulpcompletion/gulp.plugin.zsh
 
 # added by travis gem
 [ -f /Users/brian/.travis/travis.sh ] && source /Users/brian/.travis/travis.sh
@@ -50,4 +50,3 @@ fi
 
 # kubectl
 source <(kubectl completion zsh)
-source /Users/brian/.gulp.plugin.zsh/gulp.plugin.zsh
