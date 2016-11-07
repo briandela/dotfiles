@@ -38,7 +38,7 @@ fi
 export NVM_DIR="/Users/brian/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/gulpcompletion/gulp.plugin.zsh
+source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp/gulp.plugin.zsh
 
 # added by travis gem
 [ -f /Users/brian/.travis/travis.sh ] && source /Users/brian/.travis/travis.sh
