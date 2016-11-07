@@ -38,7 +38,9 @@ fi
 export NVM_DIR="/Users/brian/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp/gulp.plugin.zsh
+if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp/gulp.plugin.zsh" ]]; then
+    source ${ZDOTDIR:-$HOME}/.dotfiles/zsh/modules/gulp/gulp.plugin.zsh
+fi
 
 # added by travis gem
 [ -f /Users/brian/.travis/travis.sh ] && source /Users/brian/.travis/travis.sh
@@ -49,4 +51,6 @@ if [[ -s "/usr/local/bin/aws_zsh_completer.sh" ]]; then
 fi
 
 # kubectl
-source <(kubectl completion zsh)
+if  type "$kubectl" > /dev/null; then
+    source <(kubectl completion zsh)
+fi
