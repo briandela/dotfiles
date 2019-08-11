@@ -2,7 +2,9 @@
 	dotfiles \
 	brews \
 	ensure-location \
-        install-npm-modules \
+	install-modules \
+	install-npm-modules \
+	install-gems \
 	install-configs \
 	install-configs-git \
 	install-fonts \
@@ -15,7 +17,7 @@ help:
 	@echo "    dotfiles  Install fonts, dotfiles, zsh (prezto) as default shell etc."
 	@echo
 
-dotfiles: ensure-location update-submodules install-configs install-fonts install-prezto default-zsh
+dotfiles: ensure-location update-submodules install-configs install-fonts install-prezto install-modules default-zsh
 	@echo "Remember to also configure iterm2 to use powerline fonts"
 	@echo
 
@@ -32,8 +34,13 @@ ifneq "$(shell pwd)" "$(HOME)/.dotfiles"
 	exit 1
 endif
 
+install-modules: install-npm-modules install-gems
+
 install-npm-modules:
 	sh $(shell pwd)/npm/install.sh
+
+install-gems:
+	sh $(shell pwd)/gems/install.sh
 
 install-configs: install-configs-git install-shared-dotfiles
 
